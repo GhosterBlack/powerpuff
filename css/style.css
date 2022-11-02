@@ -52,10 +52,6 @@ body {
     border-radius: 100%;
 }
 .moveVis {
-    top: 72%;
-    left: -5%;
-    width: 40%;
-    height: 32%;
     border-radius: 0px;
 }
 .move {
