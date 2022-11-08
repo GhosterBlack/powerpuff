@@ -2,6 +2,8 @@ var personajes = {
     normie: {
         vida: 100,
         clan: "perdido",
+        rol: "habil",
+        grupo: "Clan",
         sistema: 1,
         edad: 18,
         canal: {mana: 100, charge: 2, mejora: "atq", dis: 5, tele: 2, mana2: 40, poten: 4, nombre: "Energia pura",
@@ -18,16 +20,16 @@ var personajes = {
             vel: 1,
             salto: 1,
             caida: 1,
-            def: 1.6,
+            def: 2,
             atq: 2.8,
             color: "blue",
             raf: 1,
-            res: 1.9,
+            res: 1.6,
             should: true
         },
         poderes: [0, 1],
         basico: {
-            damage: 40,
+            damage: 30,
             distancia: 3,
             tipo: 0,
             combi: 3,
@@ -43,6 +45,8 @@ var personajes = {
     hania: {
         vida: 100,
         clan: "bailarin",
+        rol: "habil",
+        grupo: "Tribu",
         sistema: 2,
         edad: 16,
         canal: {tanques:[1], carga: [5], efectos: [26]},
@@ -57,7 +61,7 @@ var personajes = {
             res: 2
         },
         basico: {
-            damage: 40,
+            damage: 30,
             distancia: 3,
             tipo: 0,
             combi: 3,
@@ -76,6 +80,8 @@ var personajes = {
     phantom: {
         vida: 140,
         clan: "espectro",
+        rol: "especial",
+        grupo: "Clan",
         sistema: 1,
         edad: 28,
         canal: {mana: 120, charge: 3, mejora:"visible", dis: -4, tele: 1, mana2: 80, poten: 0.9, nombre: "¿Me temes?",
@@ -91,15 +97,15 @@ var personajes = {
             vel: 1.2,
             salto: 1,
             caida: 1,
-            def: 1,
+            def: 1.5,
             atq: 1,
             color: "yellow",
-            raf: 3,
-            res: 1.2
+            raf: 2.7,
+            res: 2.2
         },
         basico: {
             damage: 30,
-            distancia: 3,
+            distancia: 7,
             robo: 10,
             raf: true,
             res: true,
@@ -119,6 +125,8 @@ var personajes = {
     silver: {
         vida: 110,
         clan: "domador",
+        rol: "tirador",
+        grupo: "Tribu",
         sistema: 2,
         edad: 17,
         canal: {tanques: [2, 2, 2], carga: [5, 8, 10], efectos: [27, 28, 29], color:"250, 100, 250, "},
@@ -129,7 +137,7 @@ var personajes = {
             def: 1.8,
             atq: 3.2,
             color: "silver",
-            raf: 1,
+            raf: 2,
             res: 2
         },
         poderes: [6, 7],
@@ -149,6 +157,8 @@ var personajes = {
     marinette: {
         vida: 80,
         clan: "sastre",
+        rol: "tanque",
+        grupo: "Aldea",
         sistema: 2,
         edad: 25,
         canal: {tanques: [1, 1, 1], carga: [2, 4, 6], efectos: [20, 21, 22], color:"255, 0, 0, "},
@@ -158,7 +168,7 @@ var personajes = {
             caida: 1,
             def: 3,
             atq: 2.3,
-            color: "black",
+            color: "rgb(50, 50, 50)",
             raf: 1,
             res: 3.8
         },
@@ -182,6 +192,8 @@ var personajes = {
     anderson: {
         vida: 115,
         clan: "guerrero",
+        rol: "tanque",
+        grupo: "Academia",
         sistema: 2,
         edad: 29,
         canal: {tanques: [3, 3, 3], carga: [2, 4, 6], efectos: [23, 30, 31], color:"255, 20, 20, "},
@@ -215,6 +227,8 @@ var personajes = {
     leonard: {
         vida: 115,
         clan: "guerrero",
+        rol: "tirador",
+        grupo: "Academia",
         sistema: 1,
         edad: 21,
         canal: {mana: 200, mejora: "vat", mana2: 0.1, charge: 10, nombre: "Municion", especial: [
@@ -256,8 +270,10 @@ var personajes = {
     gus: {
         vida: 115,
         clan: "bailarin",
+        grupo: "Tribu",
         sistema: 2,
         edad: 22,
+        rol: "fisico",
         canal: {tanques:[1], carga: [5], efectos: [26]},
         stat: {
             vel: 1.3,
@@ -287,6 +303,8 @@ var personajes = {
     },
     isabella: {
         clan: "angel",
+        rol: "especial",
+        grupo: "Clan",
         vida: 100,
         sistema: 1,
         edad: 19,
@@ -327,6 +345,8 @@ var personajes = {
     },
     ismael: {
         clan: "angel",
+        rol: "fisico",
+        grupo: "Ex-Clan",
         vida: 100,
         edad: 25,
         sistema: 2,
@@ -363,6 +383,8 @@ var personajes = {
 
     killian: {
         clan: "tovar",
+        rol: "tanque",
+        grupo: "Familia",
         vida: 100,
         sistema: 0,
         edad: 21, 
@@ -392,8 +414,10 @@ var personajes = {
             estado: {crit: 1.5, atq: 1.4, timer: 1.3}
         }
     },
-    edwin: {
+    lisa: {
         clan: "navarro",
+        rol: "tirador",
+        grupo: "Familia",
         vida: 100,
         edad: 27,
         sistema: 1,
@@ -406,11 +430,11 @@ var personajes = {
             vel: 1.5,
             salto: 0.7,
             caida: 1.2,
-            def: 2,
+            def: 1.4,
             atq: 2.8,
             color: "rgb(100, 200, 255)",
             raf: 2.4,
-            res: 2,
+            res: 1.5,
 
         },
         sprs: 12,
@@ -418,6 +442,75 @@ var personajes = {
         hab: 22,
         ultiTime: 25,
         ulti: 11,
+        basico: {
+            damage: 30,
+            distancia: 7,
+            combo: 5,
+            efecto: {vel: 0.9, timer: 0.9},
+            anim: "<div style='background-color: transparent; color: white' class='medialuna'></div>",
+            vis: visses[0],
+        }
+    },
+    bastian: {
+        clan: "sastre",
+        rol: "habil",
+        grupo: "Aldea",
+        vida: 70,
+        edad: 17,
+
+        stat: {
+            vel: 1.8,
+            salto: 1,
+            caida: 1,
+            def: 1.2,
+            atq: 2,
+            color: "rgb(40, 40, 40)",
+            raf: 1,
+            res: 1.2,
+
+        },
+        sprs: 12,
+        poderes: [50, 51, 52],
+        hab: 23,
+        ultiTime: 25,
+        ulti: 12,
+        basico: {
+            damage: 30,
+            distancia: 4,
+            anim: "<img src='img/objs/aguja.png' style='margin-top: 25px;'>",
+            vis: [{width: "0px"}, {width: "80px"}],
+            combi: 3,
+            estado: {crit: 2}
+        }
+    },
+    Alya: {
+        clan: "sastre",
+        rol: "asistente",
+        grupo: "Aldea",
+        vida: 80,
+        edad: 22,
+        sistema: 1,
+        canal: {mana: 100, mejora: "regen", mana2: 40, charge: 15, nombre: "Buen hilo", especial: [
+            "buffs", {caida: 2},
+            "timer", 50   
+        ]
+        },
+        stat: {
+            vel: 2,
+            salto: 1,
+            caida: 1.8,
+            def: 1.8,
+            atq: 1,
+            color: "violet",
+            raf: 2.2,
+            res: 1.8,
+
+        },
+        sprs: 12,
+        poderes: [53, 54],
+        hab: 24,
+        ultiTime: 25,
+        ulti: 13,
         basico: {
             damage: 30,
             distancia: 7,
@@ -587,12 +680,12 @@ var historias = {
         "Asi fue como Normie y Hania empezaron a entrenar juntos."
     ],
     hania: [
-        "Es hermana de Gus, un exhiliado del clan bailarín.",
+        "Es hermana de Gus, un exhiliado de la tribu bailarín.",
         "Por culpa del exhilio de su hermano mayor Hania tuvo que hacer frente a la vida practicamente sola y hacerse cargo de su hermana menor.",
         "Sin embargo Hania nunca perdio la esperanza ni la sonrisa, ni se volvio una amargada.",
         "A pesar de su buena actitud cuando se reencontro con su hermano le fue dificil perdonarlo por que sentia que este las habia abandonado",
-        "Con el tiempo Gus logro que Hania lo perdonara, luego de eso los tres hermanos se fueron del territorio del clan",
-        "Entrenaron juntos hasta el dia que a Gus lo reclutaron como miembro de la guardia real."
+        "Con el tiempo Gus logro que Hania lo perdonara, luego de eso los tres hermanos se fueron del territorio de la tribu",
+        "Entrenaron juntos hasta el dia que a Gus lo reclutaron como miembro de la academia de la guerra."
     ],
     phantom: [
         "Su clan es conocido por asimilarse a la escencia del propio Necrorus. Estar cerca de él puede causar pesadillas",
@@ -602,9 +695,9 @@ var historias = {
         "Phantom ademas aprendio a alimentarse del dolor que causa su veneno."
     ],
     silver: [
-        "Silver es un domador, como a cualquiera de su clan le encantan los animales y los Biyous",
+        "Silver es un domador, como a cualquiera de su tribu le encantan los animales y los Biyous",
         "El llevaba una vida normal y tranquila en su villa, sin embargo un día una gran bestia que ningun domador pudo controlar acabo con su hogar",
-        "La mayoria de los domadores murieron en ese acontecimiento, cuando la guardia real se entero de lo que ocurrio en lugar de ayudarlo dandole un hogar lo proclamaron un Cyanuro",
+        "La mayoria de los domadores murieron en ese acontecimiento, cuando la academia de la guerra se entero de lo que ocurrio en lugar de ayudarlo dandole un hogar lo proclamaron un Cyanuro",
         "Un cyanuro es un hanyou que perdio todo y que por el dolor de la perdida se deja controlar por la energia, terminando en convertirse en un montruo de destruccion y venganza",
         "Es de entender que se le cazara al proclamarsele cyanuro, pero Silver nunca perdio el control, tuvo que escapar de la guardia real.",
         "Termino por esconderse en el valle de los sueños, donde concio a Normie y a Hania.",
@@ -618,7 +711,7 @@ var historias = {
         "Un dia la madre de la niña, consiguio por fin un hombre. Marinette se alegro por su madre pues era lo que ella tanto habia querido",
         "Pero la salud mental de este hombre era cuestionable, pues sentia celos de la hija de su mujer, tanto asi que hizo que la madre echara a Marinette de su hogar",
         "Ahora la niña tenia que vagar por las calles",
-        "Fue entonces que se convirtio en una Hanyou. Al vagar por las calles encontro la aldea de los sastres.",
+        "Fue entonces que se convirtio en una Sastre. Al vagar por las calles encontro la aldea de los sastres.",
         "En ella seria feliz, pues bien se sabe que los sastres acojen bien a quienes han sido abandonados",
         "Tambien en esta aldea Marinette hallaria el amor, se casaria y tendria su familia...",
         "Solo para que mas tarde un hombre misterioso asesinara a dicha familia en frente de Marinette",
@@ -626,8 +719,8 @@ var historias = {
         "ese dia las sombras pelearon por ella."
     ],
     anderson: [
-        "Es un guerrero exhiliado de la guardia real. Al enterarse de la corrupcion que en ella había, Anderson decidio dejar su puesto y aceptar el exhilio",
-        "Penso que la corte consideraria que su expulsion seria suficiente castigo, pero no contaba con que o condenarian a muerte.",
+        "Es un guerrero exhiliado de la academia de la guerra. Al enterarse de la corrupcion que en ella había, Anderson decidio dejar su puesto y aceptar el exhilio",
+        "Penso que la corte consideraria que su expulsion seria suficiente castigo, pero no contaba con que lo condenarian a muerte.",
         "Como hanyou entrenado en el arte del mineral, Anderson no dejaria que lo ejecutasen sin haber cometido ningun pecado",
         "Causo un gran terremoto y destruyo el edificio de la corte.",
         "Luego de eso escapo y se dirigio al valle de las sombras, en camino contrario al valle de los sueños.",
@@ -637,26 +730,46 @@ var historias = {
     ],
     leonard: [
         "Fue conocido en la corte como 'El hanyou sin poder'. Leonard era incapaz de de usar los movimientos de piedras, tierra o si quiera podia invocar el filo de una espada.",
-        "por mucho tiempo se le considero un humano que generaba rafaga y ya, puesto que no podia controlar esa rafaga.",
-        "A pesar de eso, en la guardia real no hay solo hanyous, tambien hay humanos, por eso fue entranado como miembro del clan guerrero.",
-        "Eso no evito que tanto sus compañeros hanyous como humanos le rechazaran por no poder controlar su rafaga como los hanyous y por no generar calor como los humanos.",
+        "por mucho tiempo se le considero un humano que generaba katsu hanyou y ya, puesto que no podia controlar ese katsu y requeria de un humano para usar el katsu humano.",
+        "A pesar de eso, en la academia de la guerra no hay solo hanyous, tambien hay humanos, por eso fue entranado como miembro de la academia.",
+        "Eso no evito que tanto sus compañeros hanyous como humanos le rechazaran por no poder controlar su katsu como los hanyous y por no generar el katsu humano.",
         "Leonard era un caso singular sin duda, pero aprendio muy rapido a disparar y moverse rapido, muy pronto se convirtio en uo de los soldados mas vitales de la realeza.",
-        "Un día, en una revision medica de rutina, la doctora sustituta, una miembro del clan Sastre, atendio a Leonard y descubrio que el aprendio a usar su rafaga para potenciar su capacidad de aprendizaje",
-        "Gracias a ella, Leonard recupero la esperanza y poco a poco descubrio como controlar por completo su rafaga, aun asi no dejo su rifle y su escopeta atras.",
+        "Un día, en una revision medica de rutina, la doctora sustituta, una miembro de la aldea Sastre, atendio a Leonard y descubrio que el aprendio a usar su katsu para potenciar su capacidad de aprendizaje",
+        "Gracias a ella, Leonard recupero la esperanza y poco a poco descubrio como controlar por completo su katsu, aun asi no dejo su rifle y su escopeta atras.",
         "Un dia, la corte le pidio que casace a un exhiliado, y así lo hizo. Sin embargo el tipo al que le pidieron que case era el mismisimo Anderson, uno de sus heroes.",
         "Al perder contra el y escuchar su historia, se unio a su lado y viajo con el al valle de los sueños"
     ],
     gus: [
-        "Gus fue exhiliado de su clan por no acatar las ordenes que se le dio. El pensaba que la guardia real era un grupo de personas honorables",
-        "Con ese pensamiento abandono su clan y presento su solicitud al clan guerrero para formar parte de las lineas de la guardia real",
+        "Gus fue exhiliado de su tribu por no acatar las ordenes que se le dio. El pensaba que la academia de guerra era un grupo de personas honorables",
+        "Con ese pensamiento abandono su tribu y presento su solicitud a la academia para formar parte de las lineas de la corte",
         "Los bailarines eran conocidos por ser como los jitanos de los hanyous, siempre llendo de aquí para alla, esto hizo que la guardia real dudara de el",
-        "Pero al cabo de un rato, al demostrarle su lealtad y sobre todo su efectividad Gus fue aceptado como miembro de la guardia.",
-        "Sin embargo no duro mucho para que se diera cuenta que su amada guardia no era mas que un monton de matones y maleantes",
+        "Pero al cabo de un rato, al demostrarle su lealtad y sobre todo su efectividad, Gus fue aceptado como miembro de la realeza.",
+        "Sin embargo no duro mucho para que se diera cuenta que su amada academia no era mas que un monton de matones y maleantes",
         "Aun asi no perdio la esperanza de que todo cambiara. Lo enviaron a una mision para eliminar a unos desertores",
         "Cuando encontro a uno de ellos, que parecia confiar mucho en su defensa Gus no tardo en bajarlo de su nube con unos pocos pasos no solo traspazo su defensa sino que lo dejo medio muerto",
         "Sin embargo se dio cuenta que estaba siendo apuntado por otro de los desertores, justo antes de ser aniquilado pudo oir la voz de su hermana",
         "Una voz que penso que nunca volveria a oir, cuando el tirador oyo esta voz bajo su arma. Hania no tardo en hacerse notar.",
-        "Gus tambien bajo las armas... Luego de eso, Anderson, el desertor que casi mata Gus, le explico por que habia abandonado a la guardia",
-        "La noticia fue como un golpe bajo para Gus, quien de inmediato tambien deserto de la Guardia Real"
+        "Gus tambien bajo las armas... Luego de eso, Anderson, el desertor que casi mata Gus, le explico por que habia abandonado la academia",
+        "La noticia fue como un golpe bajo para Gus, quien de inmediato tambien deserto de la Academia"
+    ],
+    isabella: [
+        "En el mundo celestial donde viven los conocidos Angeles, Isabella es conocida por ser la mujer mas fuerte entre todos los angeles. Nacio con una habilidad unica, podia controlar el Katsu puro de los angeles y el katsu normal de los humanos",
+        "Con esta facultad unica poseia una dualidad especial sin duda. Un dia, una extraña grieta rompio el espacio en el universo angelical, esto tomo por sorpresa a todos los angeles \n\
+        quienes asumiero que lo que salia de ella era un hijo de necrorus.",
+        "Al no conocer el poder de este, enviaron a su guerrera mas fuerte, Isabella. La batalla contra este ser fue muy larga y consumio mucho a la angel.",
+        "Cuando estaba a punto de perder, su hermano Ismael se interpuso contra el golpe de gracia. Este ataque consumio la puresa de Ismael y lo convirtio en un Hanyou impuro que el propio universo rechazo, en tanto esto sucedio \n\
+        tanto Ismael como la criatura que atacaba a Isabella fueron enviados al mundo humano",
+        "Isabella baja constantemente a este mundo a visitar a su hermano y a vigilar que esa cosa que lo mancho no se salga de control."
     ]
+}
+const clases = {
+    tanque: "No suelen golpear muy fuerte por si solos pero aguantan bien el daño. Si una batalla se alarga mucho confia en cambiar a uno de ellos para no perder la partida.",
+    asistente: "No golpean fuerte ni son buenos aguantando daño, pero sus habilidades surten efecto aun si estan fuera de combate, cambiar a un asistente no crea tiempo de recarga al cambio.",
+    habil: "Basan su eficacia en sus habilidades, suele tener habilidades de movimiento que les permiten escapar en caso de nececitarlo o alcanzar a algun enemigo. No tienen mucha distancia \n\
+     en sus ataques basicos por lo que dependen de sus habilidades",
+    tirador: "Sus ataques basicos y a veces sus habilidades golpean a distancia considerable, suelen causar mucho daño pero tener muy poca resistencia, es muy bueno para pasar niveles, pero \n\
+    se cuidadoso al usarlo contra jefes.",
+    especial: "Suelen usar el daño rafaga para sus ataques, tienen distancia en muchas ocaciones y aguantan bien, pero solo por uno de los dos lados. Al tener buena defensa fisica tendran baja defensa rafaga \n\
+    o biceversa, usalos en niveles donde los enemigos usen un solo tipo de daño.",
+    fisico: "Golpean a los rivales usando daño fisico, tienen buena distancia con sus habilidades y aguanta bien. Usalos contra jefes para derrotarlos mas rapidamente."
 }

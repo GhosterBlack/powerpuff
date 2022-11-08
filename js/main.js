@@ -120,6 +120,8 @@ var app = (()=> {
         combCount: 0,
         activate: false,
         personajes: ["normie", "hania"],
+        equipo: [],
+        vidas: [],
         buffs: {
             vel: 1,
             atq: 1,
@@ -620,9 +622,13 @@ var app = (()=> {
         if ((gamer.poderes[2] && gamer.poderes[2] > 0)) {
                 
             if (!velA ) {
+                var poder = poderes[gamer.poderes[2]]
+                if (gamer.buffs.poderes[2] > -1) {
+                    poder = poderes[gamer.buffs.poderes[2]]
+                }
                 jugador.firstChild.src = galeria[gamer.sprs].extra || galeria[gamer.sprs].basico
-                if (gamer.count[2] >= (poderes[gamer.poderes[2]].count || 5)) {
-                    ataque(gamer, false, poderes[gamer.poderes[2]])
+                if (gamer.count[2] >= (poder.count || 5)) {
+                    ataque(gamer, false, poder)
                     gamer.count[2] = 0
                     
                 }
@@ -714,60 +720,62 @@ var app = (()=> {
             nodos[i].style.backgroundImage = "url("+imge+")"
         }
     }
+    var keyQ = 0
+    public.keyQ = (valor = 0)=> {
+        if(keyQ > 0)
+        keyQ -= valor
+    }
     accionTecla.KeyQ_Down = ()=> {
-        if (inMenu == false && lock == false ) {
-            if (gamer.cria) {
-                resetChara()
-                if (gamer.jVida) {
-                    gamer.vida = gamer.jVida
-                    gamer.salud = gamer.jSalud
-                    gamer.jVida = false
-                }
-                gamer.cria = false
-            }
-            mini.style.overflowY = "scroll"
+        if ( inMenu == false && lock == false ) {
+            
             inMenu = true
-            lock = true
-            x = 0
-            mini.innerHTML = ""
+            img.style.display = "none"
+            vida.style.display = "none"
+            info.style.display = "none"
             var menu_letra = creacion({tag: "h1", class:"menu", style:{}})
-            menu_letra.innerText = "Biyous"
+            menu_letra.innerText = "Equipo"
             mini.appendChild(menu_letra)
-            if (criaturas.length > 0) {
+            if (gamer.equipo.length > 0) {
                 // codigo para ver las criaturas
-                for (let i = 0; i < criaturas.length; i++) {
-                    const cria = criaturas[i];
+                let mensaje1 = creacion({tag:"div", class:"objeto", style:{}})
+                mensaje1.id = "mensaje1"
+                mensaje1.innerHTML = "Tiempo de recarga: "+keyQ
+                if(keyQ > 0)
+                mini.appendChild(mensaje1)
+
+                for (let i = 0; i < gamer.equipo.length; i++) {
+                    const equipo = personajes[gamer.equipo[i]];
+                    let prom = (gamer.vidas[i]*100)/equipo.vida
+                    if (prom > 100) {
+                        prom = 100
+                    }
                     let mensaje = creacion({tag:"div", class:"objeto", style:{}})
-                    mensaje.innerHTML = cria.alias+" <p> Especie: "+save2[i][0]+"<br> \n\
-                    Atq: "+((cria.stat.atq).toString()).substring(0, 4)+"<br> \n\
-                    Def: "+((cria.stat.def).toString()).substring(0, 4)+"<br> \n\
-                    Raf: "+((cria.stat.raf).toString()).substring(0, 4)+"<br> \n\
-                    Res: "+((cria.stat.res).toString()).substring(0, 4)+"<br> \n\
-                    Vel: "+((cria.stat.vel).toString()).substring(0, 4)+"<br> \n\
-                    Hab: "+objetos[cria.hab].hab+"<br>"+objetos[cria.hab].desc+" <br>\n\
-                    Obj: "+objetos[cria.obj].nombre+"<br>"+objetos[cria.obj].descripcion+"</p>"
+                    mensaje.innerHTML = "<div class='mirarImg'><img src="+galeria[equipo.sprs].normal+"></div> <div class='p'> \n\
+                    Vida: <div class='vid'><div class='sal' style='width:"+(prom)+"%'></div></div>\n\
+                    Hab: "+objetos[equipo.hab].hab+"<br>"+objetos[equipo.hab].desc+" <br></div>"
                     mini.appendChild(mensaje)
                     mensaje.onclick = ()=> {
-                        if (cria.salud <= 0) {
-                            return
+                        if (keyQ <= 0) {
+                            cambioPersonaje(i)
+                            accionTecla.KeyQ_Down()
                         }
-                        dataCriaLoad(i)
-                        accionTecla.KeyQ_Down()
                     }
                 }
             } else {
                 var mensaje = creacion({tag:"div", class:"objeto", style:{}})
-                mensaje.innerHTML = "No tienes Biyous. <p> Puedes capturar Biyous si equipas los objetos debidos </p>"
+                mensaje.innerHTML = "No tienes equipo. <p> Agrega equipo desde el cofre </p>"
                 
                 mini.appendChild(mensaje)
 
             }
-        } else if (inMenu == true) {
+        } else if(lock == false){
             mini.style.overflowY = ""
-            lock = false
             inMenu = false
             mini.innerHTML = ""
             mini.append(img, vida, info)
+            img.style.display = ""
+            vida.style.display = ""
+            info.style.display = ""
 
         }
     }
@@ -1002,7 +1010,7 @@ var app = (()=> {
                 }
                 
             }
-        } else if (inMenu == true) {
+        } else if (inMenu == true && lock == true) {
             mini.style.overflowY = ""
             lock = false
             inMenu = false
@@ -1276,24 +1284,65 @@ var callendo = false
         
 
     }
+    accionTecla.Comma_Up = ()=> {
+        cambioPersonaje(0);
+    }
+    accionTecla.Period_Up = ()=> {
+        cambioPersonaje(1)
+    }
+    accionTecla.Slash_Up = ()=> {
+        cambioPersonaje(2)
+    }
+    public.keyQ2 = 30
+    function cambioPersonaje(i) {
+        if (i >= gamer.equipo.length || keyQ > 0) {
+            return
+        }
+        let salud = gamer.salud
+        let nombre = gamer.nombre
+        public.actualizar(gamer.equipo[i])
+        gamer.equipo[i] = nombre
+        gamer.salud = gamer.vidas[i]
+        gamer.vidas[i] = salud
+        verificar()
+        if (gamer.rol != "asistente")
+        keyQ = public.keyQ2
+        public.keyQ2 = 30
+        let q = setInterval(() => {
+            if (keyQ < 1) {
+                window.clearInterval(q)
+            } else if (lock == false) {
+                keyQ--
+                var m = document.getElementById("mensaje1")
+                if (m) {
+                    m.innerHTML = "Tiempo de recarga: "+keyQ
+                }
+            }
+        }, 1000);
+                            
+    }
     function teclaAbajo(key) {
         var tecla = key.code
-        
+        // console.log(tecla)
         if (accionTecla[tecla+"_Down"]) {
             accionTecla[tecla+"_Down"]()
         }
     }
     function teclaArriba(key) {
         var tecla = key.code;
-        
         if (accionTecla[tecla+"_Up"]) {
             accionTecla[tecla+"_Up"]()
         }
     }
     function levelLoad(n) {
         pantalla.innerHTML = ""
-        ubicacion = []
+        for (let i = 0; i < mods.length; i++) {
+            const mod = mods[i];
+            if(mod.stat)
+            mod.stat.salud = 0
+        }
         mods = []
+        ubicacion = []
         bloqueos = []
         nivel = niveles[n]
         gamer.x = nivel.x || 100
@@ -1689,16 +1738,21 @@ var callendo = false
             regen: 1,
             res: 1,
             raf: 1,
-            poderes: [-1, -1],
+            poderes: [-1, -1, -1],
             
         }
     }
     function obj1() {
-        if (obj.tipo == 1) {
+        if (obj.tipo == 1 || obj.tipo == 7) {
             var keys = Object.keys(obj.caract)
             for (let i = 0; i < keys.length; i++) {
                 const key = keys[i];
-                gamer.buffs[key] *= obj.caract[key]
+                if (gamer.buffs[key]) {
+                    gamer.buffs[key] *= obj.caract[key]
+                }
+                if (obj.obj) {
+                    obj.obj(gamer, mods)
+                }
             }
         }
         if (hab.tipo == 1) {
@@ -1775,32 +1829,54 @@ var callendo = false
                 mod.count[3] = 100
                 mod.cargaHab = true
             }
-            if (!mod.movBoo) {
+            var movimiento = (mod.stat.vel*mod.buffs.vel)*10
+            if (!mod.movBoo && gamer.buffs.visible == 1) {
+                if (gamer.y < mod.y ) {
+                    mod.y -= movimiento
+                }
+                if (gamer.y > mod.y) {
+                    mod.y += movimiento
+                }
                 if (gamer.x < mod.x+(mod.pasos)*10 && gamer.x > mod.x-(mod.pasos)*10) {
-                    if ((gamer.x > mod.x+(mod.pasos*5) || gamer.x < mod.x-(mod.pasos*5)) && gamer.buffs.visible >= 1) {
+                    if (!mod.disparo) {
+                        mod.count[3] = 100
+                        r[3] = true
+                        mod.disparo = true
+                        var t = setTimeout(() => {
+                            mod.disparo = false
+                            window.clearTimeout(t)
+                        }, 5000);
+                    } else {
+
                         if (mod.count[3] >= poderes[mod.poderes[3]].count) {
                             r[3] = true
-                        } else {
-                            r[2] = true
                         }
-                        if (mod.x - gamer.x > 0) {
-                            mod.x -= 1
-                        } else {
-                            mod.x += 1
+                        if (gamer.x - mod.x < 30 && gamer.x - mod.x > 0) {
+                            mod.x -= movimiento
+                            r[0] = true
+                            mod.cargaHab = false
+                        } else if (gamer.x - mod.x > -30 && gamer.x - mod.x < 0) {
+                            mod.x += movimiento
+                            r[0] = true 
+                            mod.cargaHab = false
+                        } else{
+                            if (gamer.x - mod.x < 0) {
+                                mod.x -= (mod.stat.vel*mod.buffs.vel)*10
+        
+                            } else  {
+                                mod.x += (mod.stat.vel*mod.buffs.vel)*10
+                            }
                         }
-                        if ((gamer.x > mod.x+(100) || gamer.x < mod.x-(100))) {
-                            r[2] = true
-                            r[0] = false
-                            r[1] = false
+                        if(gamer.buffs.visible >= 1) {
+                            r[0] = true
+                            if(r[3] == false)
+                            r[1] = true
                         }
-                    } else {
-                        r = movs[2](mod)
-                        r.push(false)
-                        r.push(false)
                     }
-    
-                }
+                    }
                 
+            } else if (gamer.buffs.visible < 1) {
+                r = movs[2](mod)
             }
             return r 
         },
@@ -2229,7 +2305,7 @@ var callendo = false
         }
         if(hb.caract)
         if (hb.caract.fun) {
-            hb.caract.fun(atacker, null, val)
+            hb.caract.fun(atacker, null, poder)
         }
         if (ob.tipo == 2) {
             change(Object.assign({stap:0, damage:0, combo:{}, distancia:0, trans:trans, antiShield: 0}, ob.caract))
@@ -2395,6 +2471,9 @@ var callendo = false
         let tiempoBoo = false
         let tamX = poder.tamX || 30
         let tamY = poder.tamY || 50
+        if (poder.fun) {
+            poder.fun(atacker)
+        }
         let sAtack = setInterval(() => {
             if (atacker.stat.salud <= 0 || atacker.salud <= 0) {
                 i = distancia
@@ -2619,7 +2698,7 @@ var callendo = false
                             cange(Object.assign({leave:1, def:0, shield:0}, hab.caract), gamer)
                         }
                         if (hb.caract.fun) {
-                            hb.caract.fun(atacker, gamer)
+                            hb.caract.fun(atacker, gamer, poder)
                         }
                         if (obj.tipo == 6) {
                             cange(Object.assign({leave:1, def:0, shield:0}, obj.caract), gamer)
@@ -2702,7 +2781,7 @@ var callendo = false
                                     cange(Object.assign({leave:1, def:0, shield:0}, ob.caract), mod)
                                 }
                                 if (hab.caract.fun) {
-                                    hab.caract.fun(gamer, mod)
+                                    hab.caract.fun(gamer, mod, poder)
                                 }
                                 if (hb.tipo == 4) {
                                     hb.caract(mod, 2)
@@ -2783,7 +2862,9 @@ var callendo = false
                     }
                 }
                 function nerf(defender = gamer) {
-                    
+                    if (poder.cion) {
+                        poder.cion(atacker, defender)
+                    }
                     if (poder.stund) {
                         defender.stund = true
                         var spr = defender.spr
@@ -3168,6 +3249,14 @@ var pasos = 0
             }
             
         }
+        for (let p = 0; p < gamer.equipo.length; p++) {
+            const equipo = personajes[gamer.equipo[p]];
+            const habP = objetos[equipo.hab]
+            if (habP.tipo == 7) {
+                habP.fun(gamer)
+            }
+            
+        }
         if (restore >= gamer.restore && gamer.salud < gamer.vida) {
             gamer.salud += (gamer.buffs.regen*gamer.regen)*0.5
             verificar()
@@ -3299,6 +3388,9 @@ var pasos = 0
         gamer.x += x
         gamer.y += y
     }
+    public.changeChara = accionTecla.KeyQ_Down
+    public.cambioPersonaje = cambioPersonaje
+    
     public.mods = mods
     public.teclas = accionTecla
     public.gamer = gamer

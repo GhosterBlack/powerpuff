@@ -63,7 +63,7 @@ body {
     background-position-x: 50%;
     background-repeat: no-repeat;
     background-position-y: center;
-    margin-left: 10%;
+    margin-left: 10px;
 }
 .persona img {
     height: 100%;
@@ -87,6 +87,18 @@ body {
     transform: skewX(-40deg);
     margin-left: 67px;
     margin-top: 45px;
+}
+.botonMenu {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.botonMenu:hover {
+    background-color: #428bca;
+    transition: all 300ms;
 }
 .mirarImg {
     width: 100px;

@@ -72,15 +72,15 @@ var poderes = [
     { //2
         nombre: "Voy por ti",
         damage: 50,
-        distancia: 5,
+        distancia: 7,
         count: 3,
-        estado: {poderes: [45, -1], timer: 0.7},
+        estado: {poderes: [45, -1], timer: 1.2},
         //efecto: {vel: 0.1, timer: 2},
         tipo: 1,
         tele: 1,
         trans: 1,
-        trapX: 20,
-        distance: 2,
+        trapX: 30,
+        distance: 3,
     },
     { //3
         nombre: "Estoy aqui...",
@@ -204,8 +204,8 @@ var poderes = [
     },
     { // 9
         nombre: "¿Estas bien?",
-        damage: 70,
-        distancia: 4,
+        damage: 50,
+        distancia: 8,
         tipo: 10,
         count: 2,
         efecto: {res: 0.75, vel:0.3, timer: 1.3},
@@ -216,8 +216,8 @@ var poderes = [
     },
     {// 10
         nombre: "¿Hay alguien ahi?",
-        damage: 80,
-        distancia: 5,
+        damage: 60,
+        distancia: 9,
         tipo: 3,
         count: 2,
         anim: "<div style='background-color: rgba(195, 207, 19, 0.438);' class='circle'></div>",
@@ -674,57 +674,40 @@ var poderes = [
     {// 34
         nombre: "Luz sobrecargada",
         tipo: 2,
-        damage: 10,
+        damage: 0,
         count: 5,
         raf: true,
-        distancia: 6,
-        y: -3,
+        distancia: "6,10",
+        x: -2,
         bomba: {
-            damage: 40,
-            distancia: 3,
+            damage:0,
             tipo: 2,
-            y: -3,
-            x: 0.1,
-            moveY: 1,
-            moveX: 0.1,
-            raf: true,
-            block: {
-                damage: 60,
-                distancia: -3,
-                moveY: 1,
-                moveX: 0.1,
+            efecto: {vel: 0.9, timer: 1},
+            distancia: 1,
+            x: -2,
+            boom: {
+                damage: 120,
+                distancia: 3,
                 tipo: 2,
-                y: -3,
-                x: 0.1,
+                trans: 2,
                 raf: true,
-                
-                block: {
-                    damage: 80,
-                    raf: true,
-                    distancia: -3,
-                    moveY: 1,
-                    moveX: 0.1,
-                    tipo: 2,
-                    anim: "<div style='color: pink; width: 250px' class='medialuna'></div>",
-                    vis: visses[2],
-                    class: 2,
-                    transis: visses[4],
-                    trans: 3,
-                    stund: 1.2
-                },
-                anim: "<div style='color: pink; width: 100px' class='medialuna'></div>",
-                vis: visses[1],
+                anim: "<div style='color: pink; width: 250px' class='medialuna'></div>",
+                vis: visses[2],
                 class: 2,
                 transis: visses[4],
-                trans: 2,
+                block: {
+                    distancia: 1,
+                    estado: {count: [0, 100]},
+                    damage: 0
+                }
             },
-            anim: "<div style='color: pink;' class='medialuna'></div>",
-            vis: visses[0],
-            class: 2,
-            transis: visses[4],
+            anim: "<div style='color: violet; background-color: rgba(230, 180, 230, 0.8); border-radius: 100px; width: 200px'></div> ",
+            vis: visses[1],
+            tiempo: 20
         },
         anim: "<div class='medialuna' style='color: purple'></div> ",
-        vis: visses[0]
+        vis: visses[0],
+        carga: 0.3
     },
     {// 35
         nombre: "Burbuja temporal",
@@ -916,12 +899,12 @@ var poderes = [
         damage: 10,
         distancia: 5,
         count: 6,
-        estado: {inmune: 0.9, timer: 5, vat: 1.5},
+        estado: { timer: 5, vat: 1.5},
         mana: 30,
         tele: 1,
         block: {
             damage: 20,
-            estado: {vel: 1.1, timer: 4},
+            estado: {inmune: 0.9, vel: 1.1, timer: 5},
             anim: "<div class='luna' style='box-shadow: 10px 0px 10px 1px; color: white'></div>",
             vis: visses[1],
             efecto: {vel: 0.8, timer: 0.5},
@@ -1011,13 +994,11 @@ var poderes = [
         damage: 50,
         distancia: 4,
         count: 0.3,
-        trapY: 20,
-        distance: 2,
         anim: "<div class='luna' style='box-shadow: 10px 0px 10px 1px'></div>",
         vis: visses[1],
         class: 2,
         transis: visses[3],
-        efecto: {vel: 0.1, timer: 0.7},
+        efecto: {vel: 0.1, timer: 1.2},
         stund: 0.5
     },
     { //46
@@ -1087,8 +1068,151 @@ var poderes = [
         mana: 10,
         rapido: 4,
         carga: 0.6
-    }
+    },
+    {//50
+        nombre: "Rapidoooo",
+        damage: 50,
+        tipo: 10,
+        distancia: 6,
+        count: 5,
+        tele: 1,
+        x: 2,
+        block: {
+            damage: 70,
+            tipo: 10,
+            trans: 2,
+            distancia: 5,
+            distance: 1,
+            trapX: 10,
+            block: {
+                damage: 0,
+                distancia: 1,
+                estado: {count: [1, 1]}
+            },
+            anim: "<img src='img/objs/aguja.png' style='margin-top: 25px; filter: drop-shadow(2px 4px 6px violet)'>",
+            vis: [{width: "0px"}, {width: "100px"}],
+        },
 
+    },
+    {//51
+        nombre: "Estas en mi zona",
+        distancia: "1,8",
+        damage: 0,
+        tipo: 10,
+        count: 10,
+        mana: 10,
+        boom: {
+            damage: 10,
+            tipo: 10,
+            distancia: 2,
+            anim: "<div style='background-color:rgba(0, 0, 0, 0.6); width: 300px; height: 50px; margin-top: 100px; border-radius: 10px'></div>",
+            tiempo: 100,
+            block: {
+                damage: 0,
+                distancia: 1,
+                efecto: {vel: 0.8},
+                tipo: 10,
+                estado: {count:[0, 1]}
+            },
+            tamX: 100,
+            tamY: 50,
+            trans: 2,
+            robo: 100
+        },
+        anim: "<div style='background-color:rgba(0, 0, 0, 0.6); width: 50px; height: 50px; margin-top: 100px; border-radius: 10px'></div>",
+        vis: visses[0],
+        carga: 0.3,
+    },
+    {//52
+        nombre: "Ven aqui!",
+        damage: 20,
+        distancia: 8,
+        count: 8,
+        anim: "<div style='background-color: black; height: 10px' ></div>",
+        class: 1,
+        tipo: 10,
+        distance: 3,
+        trapX: -30
+    },
+    {//53
+        nombre: "Costura perfecta",
+        damage: 20,
+        distancia: 6,
+        count: 10,
+        descripcion: "Lanza dos agujas en direcciones opuestas que empujan a los enemigos y les causan daño \n\
+        ademas restaura vida a ella y a los aliados de equipo y disminuye el proximo tiempo de cambio de personaje.",
+        inicio: {
+            damage: 20,
+            distancia: -6,
+            distance: 6,
+            trapX: 30,
+            stund: 1,
+            trans: 6,
+            anim: "<img src='img/objs/aguja.png' style='margin-top: 25px; filter: drop-shadow(2px 4px 6px violet)'>",
+            vis: [{width: "0px"}, {width: "100px"}],
+
+        },
+        distance: 6,
+        anim: "<img src='img/objs/aguja.png' style='margin-top: 25px; filter: drop-shadow(2px 4px 6px violet)'>",
+        vis: [{width: "0px"}, {width: "100px"}],
+        trapX: 30,
+        stund: 1,
+        trans: 6,
+        fun: (gamer)=> {
+            app.keyQ2 = 10
+            gamer.salud += gamer.vida*0.2
+            for (let i = 0; i < gamer.vidas.length; i++) {
+                if (gamer.vidas[i] + gamer.vida*0.2 < personajes[gamer.equipo[i]].vida) {
+                    gamer.vidas[i] += gamer.vida*0.2;
+                    
+                } else {
+                    gamer.vidas[i] =  personajes[gamer.equipo[i]].vida
+                }
+                
+            }
+        }
+    },
+    {//54
+        nombre: "Centinelas sombra",
+        damage: 0,
+        distancia: 5,
+        count: 7,
+        anim: "<div class='luna' style='box-shadow: 10px 0px 10px 1px black'></div>",
+        vis: visses[0],
+        boom: {
+            damage: 10,
+            distancia: 2,
+            trans: 2,
+            vel: 10,
+            anim: "<img src='img/objs/fantasma.png'>",
+            vis: visses[1],
+            distance: 3,
+            trapX: 10,
+            tiempo: 60,
+            tamY: 50,
+        },
+        mana: 20,
+        inicio: {
+            damage: 0,
+            distancia: -5,
+            count: 4,
+            anim: "<div class='luna' style='box-shadow: 10px 0px 10px 1px black'></div>",
+            vis: visses[0],
+            boom: {
+                damage: 10,
+                distancia: -2,
+                trans: 2,
+                vel: 10,
+                anim: "<img src='img/objs/fantasma.png'>",
+                vis: visses[1],
+                distance: 3,
+                trapX: 10,
+                tiempo: 60,
+                tamY: 50,
+            },
+            mana: 0.1
+        }
+    }
 ]
 /* 
 Tipos:
@@ -1302,6 +1426,7 @@ var objetos = [
             function del(a = app.jugador) {
                 var b = a.querySelectorAll(".transparencia")
                 var br = a.querySelector("br")
+                if(br)
                 br.remove()
                 for (let i = 0; i < b.length; i++) {
                     const element = b[i];
@@ -1314,11 +1439,11 @@ var objetos = [
     },
     { // 8
         nombre: "Piedra abizal",
-        descripcion: "Un extraño mineral que permite entrar en estado fantasmal por 30 seg.",
+        descripcion: "Un extraño mineral que permite entrar en estado fantasmal por 10 seg.",
         hab: "Engaño de muerte",
         desc: "Entra en estado fantasmal al tener poca salud",
         tipo: 3,
-        caract: {estado: 4, tiempo: 300},
+        caract: {estado: 4, tiempo: 100},
         costo: 2
     },
     { // 9
@@ -1397,7 +1522,7 @@ var objetos = [
     },
     { // 18
         nombre: "Arpa magnifica",
-        descripcion: "Un arpa cuyo sonido baja la defensa rafaga del enemigo y disminuye el tiempo de recarga de alguna habilidad del portador",
+        descripcion: "Un arpa cuyo sonido baja la defensa rafaga del enemigo y disminuye el tiempo de recarga de las habilidades del portador",
         hab: "Piel mitica",
         desc: "Baja la defensa rafaga del enemigo y disminuye el tiempo de recarga de alguna habilidad del usuario",
         tipo: 2,
@@ -1492,16 +1617,15 @@ var objetos = [
         hab: "Arqueria",
         desc: "baja su defensa fisica, pero aumenta su critico. Ademas gana cargas con cada ataque que realice. al completar 4 cambia sus habilidades",
         tipo: 1,
-        caract: {def: 0.75, crit: 2, fun: (atacker=app.gamer, defender, pow) => {
+        caract: {def: 0.75, crit: 4, fun: (atacker=app.gamer, defender, pow) => {
             if (!atacker) {
                del() 
             }
-            if (!defender && (pow == 0 || pow == 1)) {
-                if (atacker.arco >= 6) {
+            if (!defender && pow.count) {
+                if (atacker.arco >= 5) {
                     atacker.arco = 1
                     atacker.poderes = [47, 46]
                     del()
-
                 }
             }
             if (defender) {
@@ -1557,6 +1681,46 @@ var objetos = [
                 }
             }
         }}
+    },
+    { //23
+        nombre: "Guadaña de hierro",
+        descripcion: "Una guadaña que aumenta la potencia de los golpes criticos",
+        hab: "Te dolera mas a ti que a mi",
+        desc: "Aumenta la potencia de los golpes criticos",
+        tipo: 2,
+        caract: {crit:7, stap: 7}
+    },
+    {//24
+        nombre: "Hijo de sombras",
+        descripcion: "Un hilo que enlaza a los rivales y les roba velocidad de ataque",
+        hab: "Costura de heridas",
+        tipo: 7,
+        desc: "Aumenta la vida de los aliados al estar fuera del campo",
+        caract: {vat: 1.5},
+        obj: (gamer=app.gamer, mods=[])=> {
+            for (let i = 0; i < mods.length; i++) {
+                const mod = mods[i];
+                if (mod.maldad) {
+                    mod.buffs.vat *= 0.85
+                    gamer.buffs.vat *= 1.1
+                }
+            }
+        },
+        fun: (gamer)=> {
+            if (gamer.costura) {
+                if (gamer.costura > 50) {
+                    for (let i = 0; i < gamer.vidas.length; i++) {
+                        if (gamer.vidas[i] < personajes[gamer.equipo[i]].vida) {
+                            gamer.vidas[i] += personajes[gamer.equipo[i]].vida*0.1
+                        }
+                    }
+                    gamer.costura = 1
+                } else 
+                gamer.costura++
+            } else {
+                gamer.costura = 1
+            }
+        }
     }
 ]
 
@@ -1629,7 +1793,7 @@ var ultis = [
         tipo: 12,
         combi: 1,
         estado: {estado: 1, tiempo: 10, def: 0.75, timer: 3},
-        anim: "<div style='background-color: transparent;' class='luna'></div>",
+        anim: "<div style='background-color: transparent;' class='luna'><img src='img/objs/daga.png' style='width: 80px'></div>",
         vis: visses[1],
         class: 2,
         transis: visses[8],
@@ -1799,7 +1963,7 @@ var ultis = [
         },
         x: -3,
     },
-    {
+    {//11
         nombre: "Nubarron",
         damage: 0,
         distancia: 7,
@@ -1843,6 +2007,78 @@ var ultis = [
         anim: "<div class='luna' style='box-shadow: 10px 0px 10px 1px; color: white'></div>",
         vis: visses[1],
     },
+       {//12
+        nombre: "No lo esperabas eh",
+        distancia: 5,
+        damage: 0,
+        tipo: 10,
+        boom: {
+            damage: 10,
+            tipo: 10,
+            distancia: 2,
+            anim: "<div style='background-color:rgb(0, 0, 0); width: 600px; height: 50px; margin-top: 100px; border-radius: 10px'></div>",
+            tiempo: 100,
+            block: {
+                damage: 0,
+                distancia: 1,
+                efecto: {vel: 0.8},
+                tipo: 10,
+                estado: {count:[0, 1]}
+            },
+            tamX: 200,
+            tamY: 50,
+            trans: 2,
+            robo: 100,
+            stund: 5
+        },
+        anim: "<div style='background-color:rgb(0, 0, 0); width: 50px; height: 50px; margin-top: 100px; border-radius: 10px'></div>",
+        vis: visses[0],
+        carga: 0.3,
+    },
+    {// 13
+        nombre: "¡Fuera de aqui!",
+        damage: 90,
+        tipo: 10,
+        distance: 10,
+        trapX: 30,
+        distancia: 7,
+        boom: {
+            damage: 20,
+            distancia: 2,
+            trans: 2,
+            vel: 10,
+            anim: "<img src='img/objs/fantasma.png'>",
+            vis: visses[2],
+            distance: 3,
+            trapX: 10,
+            tiempo: 80,
+            tamY: 100,
+            stund: 1
+        },
+        anim: "<img src='img/objs/aguja.png'>",
+        inicio: {
+            damage: 45,
+            tipo: 10,
+            distance: 10,
+            trapX: 30,
+            distancia: -7,
+            trans: 7,
+            anim: "<img src='img/objs/aguja.png'>",
+            boom: {
+                damage: 20,
+                distancia: -2,
+                trans: 2,
+                vel: 10,
+                anim: "<img src='img/objs/fantasma.png'>",
+                vis: visses[2],
+                distance: 3,
+                trapX: 10,
+                tiempo: 80,
+                tamY: 100,
+                stund: 1
+            },
+        }
+    }
 ]
 var nombreEstado = [
     "Normal", // 0

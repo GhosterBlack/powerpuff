@@ -188,6 +188,9 @@ var acciones = [
                 spanel.classList.add("pan2")
                 celda.appendChild(pan)
                 celda.appendChild(spanel)
+                var text = document.createElement("div")
+                pan.appendChild(text)
+                text.innerHTML = "Rol: "+propiedades.rol+"<br>"+clases[propiedades.rol]
                 let habilidades = [
                     poderes[propiedades.poderes[0]],
                     poderes[propiedades.poderes[1]],
@@ -257,6 +260,9 @@ var acciones = [
                         nod.classList.add("poderVer")
                         nod.innerHTML = teclas[k]+"<br>"+(habi.nombre || "basico")
                         nod.onclick = ()=> {
+                            if (habi.descripcion) {
+                                pan.innerHTML = habi.descripcion
+                            } else
                             acc(habi)
                         }
 
@@ -553,8 +559,12 @@ var acciones = [
                 // celda 2. Imagen del personaje, habilidad y clan. Click aqui para seleccionar
                 let p = document.createElement("p")
                 p.innerHTML = "<i class='mayus'>"+nombre+"</i><br>"
+                let clan = "Clan"
+                if (propiedades.grupo) {
+                    clan = propiedades.grupo
+                }
                 if(propiedades.clan)
-                p.innerHTML += "Clan: <span class='mayus "+propiedades.clan+"'>"+propiedades.clan+"</span> <br> "
+                p.innerHTML += "Provinencia: "+clan+" <span class='mayus "+propiedades.clan+"'>"+propiedades.clan+"</span> <br> "
                 p.innerHTML += "Habilidad pasiva: "+objetos[propiedades.hab].hab+" ("+objetos[propiedades.hab].desc+")"
                 p.classList.add("pDatos")
                 var div = document.createElement("div")
@@ -565,6 +575,9 @@ var acciones = [
                 celda.append(p, div)
                 f.appendChild(celda)
                 div.onclick = ()=> {
+                    if (app.gamer.equipo.includes(nombre)) {
+                        app.gamer.equipo[app.gamer.equipo.indexOf(nombre)] = app.gamer.nombre
+                    }
                     app.actualizar(nombre)
                     inp.click()
                     input.click()
@@ -574,7 +587,7 @@ var acciones = [
                 var text = document.createElement("div")
                 text.classList.add("pan2")
                 celda.appendChild(text)
-                text.innerHTML = "Edad: "+propiedades.edad+" <br> <br>"
+                text.innerHTML = "Edad: "+propiedades.edad+" <br> Rol: "+propiedades.rol+" <br>"
                 if (historias[nombre]) {
                     let historia = historias[nombre]
                     for (let i = 0; i < historia.length; i++) {
@@ -610,6 +623,30 @@ var acciones = [
                         celda.appendChild(nodo)
                     }
                 }
+                let usar = document.createElement("div");
+                usar.classList.add("botonMenu");
+                usar.innerHTML = "Usar",
+                usar.onclick = div.onclick
+                let agregar = document.createElement("div");
+                agregar.classList.add("botonMenu");
+                if(!app.gamer.equipo.includes(nombre))
+                agregar.innerHTML = "Agregar al equipo"
+                else
+                agregar.innerHTML = "Sacar del equipo"
+                agregar.onclick = ()=> {
+                    if (app.gamer.equipo.length < 3 && !app.gamer.equipo.includes(nombre) && app.gamer.nombre != nombre) {
+                        app.gamer.equipo.push(nombre)
+                        app.gamer.vidas.push(propiedades.vida)
+                        inp.click()
+                        lock = true
+                    } else if (app.gamer.equipo.includes(nombre)) {
+                        app.gamer.equipo.splice(app.gamer.equipo.indexOf(nombre), 1)
+                        inp.click()
+                        lock = true
+                    }
+                }
+                celda.appendChild(usar)
+                celda.appendChild(agregar)
                 f.appendChild(celda)
                 scroll.append(t)
             }
