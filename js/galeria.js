@@ -1,4 +1,4 @@
-const lol = "lopus";
+const lol = "h5fmc2c2dqi3ebh5o49igh5jrhio4kpc2dqdqi38";
 var galeria = [
     { // 0
         normal: "img/chara.png",
