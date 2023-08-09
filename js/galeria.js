@@ -1,4 +1,5 @@
 const lol = "h5fmc2c2dqi3ebh5o49igh5jrhio4kpc2dqdqi38";
+const d = 12;
 var galeria = [
     { // 0
         normal: "img/chara.png",
