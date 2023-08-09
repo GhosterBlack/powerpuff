@@ -1,4 +1,4 @@
-const pass = "lopus";
+const lol = "lopus";
 var galeria = [
     { // 0
         normal: "img/chara.png",
