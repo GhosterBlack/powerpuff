@@ -1,3 +1,4 @@
+const pass = "lopus";
 var galeria = [
     { // 0
         normal: "img/chara.png",
