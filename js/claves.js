@@ -10,3 +10,4 @@ const claves = {
         admin: false
     }
 }
+let Day = 2;
