@@ -3,5 +3,10 @@ const claves = {
         fecha: "mm-dd-aaaa",
         activate: true, // false
         admin: true,
+    },
+    frank: {
+        fecha: "12-08-2023",
+        activate: true,
+        admin: false
     }
 }
