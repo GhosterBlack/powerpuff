@@ -6,7 +6,7 @@ const claves = {
     },
     frank: {
         fecha: "12-08-2023",
-        activate: true,
+        activate: false,
         admin: false
     }
 }
