@@ -4,10 +4,22 @@ const claves = {
         activate: true, // false
         admin: true,
     },
-    frank: {
-        fecha: "12-08-2023",
+    banban: {
+        fecha: "08-11-2023",
+        activate: true,
+        admin: true
+    },
+    nati: {
+        fecha: "08-11-2023",
         activate: false,
-        admin: false
+        admin: false,
+    },
+    frank: {
+        fecha: "08-11-2023",
+        activate: false,
+        admin: true,
     }
 }
-let Day = 2;
+let Dia = 2;
+let version = 1.2;
+let dataPack = "";
