@@ -6,8 +6,8 @@ const claves = {
     },
     banban: {
         fecha: "08-11-2023",
-        activate: true,
-        admin: true
+        activate: false,
+        admin: false
     },
     nati: {
         fecha: "08-11-2023",
