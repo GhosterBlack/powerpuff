@@ -22,5 +22,5 @@ const claves = {
 }
 let Dia = 2;
 let version = 1.2;
-let dataPack = "";
-let important = false;
+let dataPack = "download.html";
+important = false;
