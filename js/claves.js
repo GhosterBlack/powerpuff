@@ -10,7 +10,7 @@ const claves = {
         admin: true
     },
     nati: {
-        fecha: "08-09-2023",
+        fecha: "08-11-2023",
         activate: false,
         admin: false,
     },
