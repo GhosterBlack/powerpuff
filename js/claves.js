@@ -3,16 +3,19 @@ const claves = {
         fecha: "mm-dd-aaaa",
         activate: true, // false
         admin: true,
+        nombre: "User "
     },
     banban: {
         fecha: "11-11-2023",
         activate: false,
-        admin: false
+        admin: false,
+        nombre: "Ivan Torres"
     },
     nati: {
         fecha: "08-11-2023",
         activate: false,
         admin: false,
+        nombre: "Natalia Bohorquez"
     },
     frank: {
         fecha: "08-11-2023",
