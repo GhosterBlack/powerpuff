@@ -25,8 +25,12 @@ const claves = {
     earth: {
         fecha: "08-22-2023",
         activate: true,
-        admin: false,
+        admin: true,
     },
+
+    user01: {
+        
+    }
 }
 let Dia = 2;
 let version = 1.2;
