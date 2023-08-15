@@ -30,61 +30,61 @@ const claves = {
 
    user1: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user2: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user3: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user4: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user5: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user6: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user7: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user8: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
     user9: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
 
     user10: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
 
