@@ -35,9 +35,9 @@ const claves = {
     },
     
     user2: {
-    fecha: "08-22-2023",
-    activate: false,
-    admin: false,
+        fecha: "09-17-2023",
+        activate: false,
+        admin: false,
     },
     
     user3: {
