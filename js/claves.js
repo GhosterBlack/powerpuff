@@ -29,14 +29,14 @@ const claves = {
     },
 
    user1: {
-    fecha: "08-22-2023",
+    fecha: "07-22-2023",
     activate: false,
     admin: false,
     },
     
     user2: {
         fecha: "09-17-2023",
-        activate: false,
+        activate: true,
         admin: false,
     },
     
