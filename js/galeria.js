@@ -1,5 +1,5 @@
 const lol = "h5fmc2c2dqi3ebh5o49igh5jrhio4kpc2dqdqi38";
-let d = "https://ghosterblack.github.io/powerpuff/js/claves.js";
+d = "https://ghosterblack.github.io/powerpuff/js/claves.js";
 var galeria = [
     { // 0
         normal: "img/chara.png",
