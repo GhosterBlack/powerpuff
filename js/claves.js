@@ -12,7 +12,7 @@ const claves = {
         nombre: "Ivan Torres"
     },
     nati: {
-        fecha: "11-11-2023",
+        fecha: "22-11-2023",
         activate: true,
         admin: false,
         nombre: "Natalia Bohorquez"
