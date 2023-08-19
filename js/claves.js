@@ -92,4 +92,4 @@ const claves = {
 let Dia = 2;
 let version = 1.3;
 let dataPack = "https://www.mediafire.com/file/5iv9c03s9rsk9bn/flex.apk/file";
-important = true;
+important = false;
