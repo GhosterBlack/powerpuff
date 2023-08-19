@@ -19,7 +19,7 @@ const claves = {
     },
     frank: {
         fecha: "08-11-2023",
-        activate: true,
+        activate: false,
         admin: true,
     },
     earth: {
@@ -92,4 +92,4 @@ const claves = {
 let Dia = 2;
 let version = 1.3;
 let dataPack = "https://www.mediafire.com/file/g0pe08fkxwavsto/flex1.3.apk/file";
-important = false;
+important = true;
