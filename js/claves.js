@@ -6,7 +6,7 @@ const claves = {
         nombre: "User "
     },
     banban: {
-        fecha: "1-11-2023",
+        fecha: "9-11-2023",
         activate: true,
         admin: false,
         nombre: "Ivan Torres"
