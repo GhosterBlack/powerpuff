@@ -9,8 +9,7 @@ const claves = {
         activate: true, // false
         admin: true,
         nombre: (()=>{
-            if (!localStorage.getItem("href"))
-                location.replace(dataPack);
+           
             return "User ";
         })()
     },
