@@ -11,12 +11,7 @@ const claves = {
         admin: false,
         nombre: "Ivan Torres"
     },
-    nati: {
-        fecha: "09-11-2023",
-        activate: true,
-        admin: false,
-        nombre: "Natalia Bohorquez"
-    },
+   
     frank: {
         fecha: "08-11-2023",
         activate: false,
