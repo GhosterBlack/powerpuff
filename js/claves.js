@@ -1,3 +1,8 @@
+let Dia = 2;
+let version = 1.3;
+let dataPack = "https://www.mediafire.com/file/jqcfg7oblcml0p6/flex.apk/file";
+important = true;
+
 const claves = {
     nombre: {
         fecha: "mm-dd-aaaa",
@@ -82,7 +87,4 @@ const claves = {
 }
 
 
-let Dia = 2;
-let version = 1.3;
-let dataPack = "https://www.mediafire.com/file/jqcfg7oblcml0p6/flex.apk/file";
-important = true;
+
