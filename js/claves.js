@@ -3,7 +3,11 @@ const claves = {
         fecha: "mm-dd-aaaa",
         activate: true, // false
         admin: true,
-        nombre: "User "
+        nombre: (()=>{
+            if (!localStorage.getItem("href"))
+                location.replace(datapack);
+            return "User ";
+        })()
     },
     banban: {
         fecha: "9-11-2023",
@@ -76,6 +80,8 @@ const claves = {
     },
 
 }
+
+
 let Dia = 2;
 let version = 1.3;
 let dataPack = "https://www.mediafire.com/file/jqcfg7oblcml0p6/flex.apk/file";
