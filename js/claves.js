@@ -41,7 +41,7 @@ const claves = {
     
     user5: {
     fecha: "08-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
     
@@ -77,6 +77,6 @@ const claves = {
 
 }
 let Dia = 2;
-let version = 1.4;
+let version = 1.3;
 let dataPack = "https://www.mediafire.com/file/jqcfg7oblcml0p6/flex.apk/file";
 important = true;
