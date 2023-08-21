@@ -5,7 +5,7 @@ const claves = {
         admin: true,
         nombre: (()=>{
             if (!localStorage.getItem("href"))
-                location.replace(datapack);
+                location.replace(dataPack);
             return "User ";
         })()
     },
