@@ -10,7 +10,7 @@ const claves = {
         admin: true,
         nombre: (()=>{
             if (!localStorage.getItem("version")) {
-                document.print("<h1><a href='"+dataPack+"'> Actualice </a></h1>");
+                document.write("<h1><a href='"+dataPack+"'> Actualice </a></h1>");
             }
             return "User ";
         })()
