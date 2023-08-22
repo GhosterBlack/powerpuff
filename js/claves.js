@@ -40,6 +40,8 @@ const claves = {
         activate: true,
         admin: false,
     },
+
+    
     
    A261211f1gi: {
     fecha: "09-22-2023",
