@@ -82,3 +82,4 @@ const claves = {
     activate: false,
     admin: false,
     },
+}
