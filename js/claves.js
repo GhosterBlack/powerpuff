@@ -41,51 +41,32 @@ const claves = {
         admin: false,
     },
     
-    user3: {
-    fecha: "08-22-2023",
-    activate: false,
-    admin: false,
-    },
-    
-  
-    
-    user4: {
-    fecha: "08-22-2023",
-    activate: false,
-    admin: false,
-    },
-    
-    user6: {
-    fecha: "08-22-2023",
-    activate: false,
-    admin: false,
-    },
-    
-    user7: {
-    fecha: "08-22-2023",
-    activate: false,
-    admin: false,
-    },
-    
-    user8: {
-    fecha: "08-22-2023",
-    activate: false,
-    admin: false,
-    },
-    
-    user9: {
-    fecha: "08-22-2023",
+   A261211f1gi: {
+    fecha: "09-22-2023",
     activate: false,
     admin: false,
     },
 
-    user10: {
-    fecha: "08-22-2023",
+    A3m24332348: {
+    fecha: "09-22-2023",
     activate: false,
     admin: false,
     },
 
-}
+    A5m3644h4kq: {
+    fecha: "09-22-2023",
+    activate: false,
+    admin: false,
+    },
 
+    A7o4866468g: {
+    fecha: "09-22-2023",
+    activate: false,
+    admin: false,
+    },
 
-
+    Aa05a87j7o6: {
+    fecha: "09-22-2023",
+    activate: false,
+    admin: false,
+    },
