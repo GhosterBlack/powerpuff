@@ -24,7 +24,7 @@ const claves = {
    
     frank: {
         fecha: "08-11-2023",
-        activate: false,
+        activate: true,
         admin: true,
     },
     earth: {
@@ -42,11 +42,6 @@ const claves = {
     },
 
     
-    user3: {
-        fecha: "08-23-2023",
-        activate: true,
-        admin: false
-    },
     user4: {
       fecha: "09-23-2023",
         activate: true,
