@@ -27,7 +27,7 @@ const claves = {
     },
     franker: {
         fecha: "08-22-2023",
-        activate: false,
+        activate: true,
         admin: true,
     },
 
@@ -48,13 +48,13 @@ const claves = {
     
    A261211f1gi: {
     fecha: "09-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
 
     A3m24332348: {
     fecha: "09-22-2023",
-    activate: true,
+    activate: false,
     admin: false,
     },
 
