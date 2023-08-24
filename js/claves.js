@@ -58,8 +58,8 @@ const claves = {
 
     A7o4866468g: {
     fecha: "10-22-2023",
-    activate: false,
-    admin: false,
+    activate: true,
+    admin: true,
     },
 
     Aa05a87j7o6: {
