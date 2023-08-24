@@ -31,14 +31,6 @@ const claves = {
         admin: true,
     },
 
-
-    
-    user2: {
-        fecha: "10-17-2023",
-        activate: true,
-        admin: false,
-    },
-
     
     user4: {
       fecha: "10-23-2023",
@@ -65,13 +57,13 @@ const claves = {
     },
 
     A7o4866468g: {
-    fecha: "09-22-2023",
+    fecha: "10-22-2023",
     activate: false,
     admin: false,
     },
 
     Aa05a87j7o6: {
-    fecha: "09-22-2023",
+    fecha: "10-22-2023",
     activate: false,
     admin: false,
     },
