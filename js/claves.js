@@ -34,7 +34,7 @@ const claves = {
 
     
     user2: {
-        fecha: "09-17-2023",
+        fecha: "10-17-2023",
         activate: true,
         admin: false,
     },
