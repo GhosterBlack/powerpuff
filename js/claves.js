@@ -39,19 +39,19 @@ const claves = {
     },
     
    A261211f1gi: {
-    fecha: "09-22-2023",
+    fecha: "07-07-2023",
     activate: false,
     admin: false,
     },
 
     A3m24332348: {
     fecha: "09-22-2023",
-    activate: false,
+    activate: true,
     admin: false,
     },
 
     A5m3644h4kq: {
-    fecha: "09-22-2023",
+    fecha: "07-07-2023",
     activate: false,
     admin: false,
     },
