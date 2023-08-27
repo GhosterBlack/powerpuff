@@ -51,8 +51,8 @@ const claves = {
     },
 
     A5m3644h4kq: {
-    fecha: "07-07-2023",
-    activate: false,
+    fecha: "11-22-2023",
+    activate: true,
     admin: false,
     },
 
