@@ -47,15 +47,15 @@ alias: "nelm"
 
     A3m24332348: {
     fecha: "09-22-2023",
-    activate: true,
-    admin: true,
+    activate: false,
+    admin: false,
         alias: "querida"
     },
 
     A5m3644h4kq: {
     fecha: "09-22-2023",
     activate: true,
-    admin: false,
+    admin: true,
         alias: "dante"
     },
 
@@ -75,8 +75,8 @@ alias: "nelm"
     
     A261211c1fc: {
 fecha: "11-22-2023",
-activate: false,
-admin: false,
+activate: true,
+admin: true,
 alias: "oreo0"
 },
 
