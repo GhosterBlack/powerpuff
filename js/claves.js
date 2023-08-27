@@ -46,7 +46,7 @@ alias: "nelm"
     },
 
     A3m24332348: {
-    fecha: "09-22-2023",
+    fecha: "10-22-2023",
     activate: true,
     admin: true,
         alias: "querida"
