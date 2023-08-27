@@ -85,63 +85,63 @@ A3m2422o32o: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo1
+alias: "oreo1"
 },
 
 A5m364484h8: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo2
+alias: "oreo2"
 },
 
 A7o4855k64k: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo3
+alias: "oreo3"
 },
 
 Aa05a7747j4: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo4
+alias: "oreo4"
 },
 
 Ac66c88g96g: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo5
+alias: "oreo5"
 },
 
 Aee7eaa0al0: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo6
+alias: "oreo6"
 },
 
 Ago8gbbcc8c: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo7
+alias: "oreo7"
 },
 
 Aj89iccodno: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo8
+alias: "oreo8"
 },
 
 Almakee8fa8: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo9
+alias: "oreo9"
 },
 
 }
