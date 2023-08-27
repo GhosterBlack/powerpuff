@@ -14,7 +14,7 @@ const claves = {
         })()
     },
     banban: {
-        fecha: "9-11-2023",
+        fecha: "09-11-2023",
         activate: true,
         admin: false,
         nombre: "Ivan Torres"
