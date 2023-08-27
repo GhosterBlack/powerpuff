@@ -41,30 +41,36 @@ const claves = {
    A261211f1gi: {
     fecha: "11-11-2023",
     activate: true,
-    admin: false,
+    admin: true,
+alias: nelm
+
     },
 
     A3m24332348: {
     fecha: "11-22-2023",
     activate: true,
-    admin: false,
+    admin: true,
+        alias: querida
     },
 
     A5m3644h4kq: {
     fecha: "11-22-2023",
     activate: true,
-    admin: false,
+    admin: true,
+        alias: dante
     },
 
     A7o4866468g: {
     fecha: "10-22-2023",
     activate: true,
     admin: true,
+        alias: primo
     },
 
     Aa05a87j7o6: {
     fecha: "10-22-2023",
     activate: false,
     admin: false,
+        alias: ident
     },
 }
