@@ -55,7 +55,7 @@ alias: "nelm"
     A5m3644h4kq: {
     fecha: "09-22-2023",
     activate: true,
-    admin: true,
+    admin: false,
         alias: "dante"
     },
 
