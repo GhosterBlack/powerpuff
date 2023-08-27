@@ -19,11 +19,10 @@ const claves = {
         admin: false,
         nombre: "Ivan Torres"
     },
-   
-    frank: {
-        fecha: "08-11-2023",
-        activate: true,
-        admin: true,
+    ivan: {
+        fecha: '09-22-2023',
+        activate: false,
+        admin: true
     },
     franker: {
         fecha: "08-22-2023",
