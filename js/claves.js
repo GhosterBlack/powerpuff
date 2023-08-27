@@ -78,7 +78,7 @@ alias: "nelm"
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo0
+alias: "oreo0"
 },
 
 A3m2422o32o: {
