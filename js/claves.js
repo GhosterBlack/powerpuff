@@ -25,7 +25,7 @@ const claves = {
         admin: true
     },
     franker: {
-        fecha: "08-22-2023",
+        fecha: "09-22-2023",
         activate: true,
         admin: true,
     },
