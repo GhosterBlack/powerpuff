@@ -84,7 +84,7 @@ A3m2422o32o: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "oreo1"
+alias: "pietro"
 },
 
 A5m364484h8: {
