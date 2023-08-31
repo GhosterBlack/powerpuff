@@ -82,8 +82,8 @@ alias: "oreo0"
 
 A3m2422o32o: {
 fecha: "11-22-2023",
-activate: false,
-admin: false,
+activate: true,
+admin: true,
 alias: "pietro"
 },
 
