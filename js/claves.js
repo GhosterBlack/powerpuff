@@ -9,18 +9,7 @@ const claves = {
         activate: true, // false
         admin: true,
         nombre: (()=>{
-            let bot = document.getElementById("botonOveriew");
-            if (bot) {
-                bot.addEventListener("click", ()=> {
-                    main.style.marginTop = "10vh";
-                })
-                document.querySelector(".menBot").addEventListener("click", ()=> {
-                    main.style.marginTop = "";
-                })
-                document.getElementById("sectionHidde").addEventListener("click", ()=> {
-                    main.style.marginTop = "";
-                })
-            } 
+            
             return "User ";
         })()
     },
