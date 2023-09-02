@@ -60,8 +60,8 @@ alias: "nelm"
     },
 
     A7o4866468g: {
-    fecha: "09-22-2023",
-    activate: true,
+    fecha: "09-17-2023",
+    activate: false,
     admin: true,
         alias: "primo"
     },
