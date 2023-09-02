@@ -1,6 +1,6 @@
 let Dia = 2;
-let version = 1.5;
-let dataPack = "https://www.mediafire.com/file/e5mq9xggdq4urti/flex1.5.apk/file";
+let version = 1.7;
+let dataPack = "https://www.mediafire.com/file/jdo5bchqpj6bskf/flex1.7.apk/file";
 important = false;
 
 const claves = {
