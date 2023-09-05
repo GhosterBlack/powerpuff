@@ -74,10 +74,10 @@ alias: "nelm"
     },
     
     A261211c1fc: {
-fecha: "11-22-2023",
+fecha: "08-22-2023",
 activate: true,
 admin: true,
-alias: "oreo0"
+alias: "carmen"
 },
 
 A3m2422o32o: {
