@@ -40,7 +40,7 @@ const claves = {
    A261211f1gi: {
     fecha: "09-11-2023",
     activate: true,
-    admin: true,
+    admin: false,
 alias: "nelm"
 
     },
@@ -55,14 +55,14 @@ alias: "nelm"
     A5m3644h4kq: {
     fecha: "09-22-2023",
     activate: true,
-    admin: true,
+    admin: false,
         alias: "dante"
     },
 
     A7o4866468g: {
     fecha: "09-17-2023",
     activate: false,
-    admin: true,
+    admin: false,
         alias: "primo"
     },
 
@@ -76,20 +76,20 @@ alias: "nelm"
     A261211c1fc: {
 fecha: "10-22-2023",
 activate: true,
-admin: true,
+admin: false,
 alias: "carmen"
 },
 
 A3m2422o32o: {
 fecha: "11-22-2023",
 activate: true,
-admin: true,
+admin: false,
 alias: "pietro"
 },
 
 A5m364484h8: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "oreo2"
 },
