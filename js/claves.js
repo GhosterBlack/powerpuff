@@ -74,7 +74,7 @@ alias: "nelm"
     },
     
     A261211c1fc: {
-fecha: "08-22-2023",
+fecha: "10-22-2023",
 activate: true,
 admin: true,
 alias: "carmen"
