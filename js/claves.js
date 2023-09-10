@@ -96,7 +96,7 @@ alias: "oreo2"
 
 A7o4855k64k: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "oreo3"
 },
