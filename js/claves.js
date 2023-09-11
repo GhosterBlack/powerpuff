@@ -38,7 +38,7 @@ const claves = {
     },
     
    A261211f1gi: {
-    fecha: "09-11-2023",
+    fecha: "09-22-2023",
     activate: true,
     admin: false,
 alias: "nelm"
