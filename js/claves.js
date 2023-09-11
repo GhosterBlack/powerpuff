@@ -8,10 +8,7 @@ const claves = {
         fecha: "mm-dd-aaaa",
         activate: true, // false
         admin: true,
-        nombre: (()=>{
-            
-            return "User ";
-        })()
+        nombre: "user "
     },
     banban: {
         fecha: "09-11-2023",
