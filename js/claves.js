@@ -88,10 +88,10 @@ alias: "pietro"
 },
 
 A5m364484h8: {
-fecha: "11-22-2023",
+fecha: "09-28-2023",
 activate: true,
 admin: false,
-alias: "oreo2"
+alias: "Pasadena2"
 },
 
 A7o4855k64k: {
