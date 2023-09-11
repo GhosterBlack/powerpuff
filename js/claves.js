@@ -86,7 +86,7 @@ alias: "pietro"
 
 A5m364484h8: {
 fecha: "09-28-2023",
-activate: true,
+activate: false,
 admin: false,
 alias: "Pasadena2"
 },
