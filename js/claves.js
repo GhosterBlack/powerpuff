@@ -28,12 +28,6 @@ const claves = {
     },
 
     
-    user4: {
-      fecha: "10-23-2023",
-        activate: true,
-        admin: false
-    },
-    
    A261211f1gi: {
     fecha: "09-22-2023",
     activate: true,
@@ -82,13 +76,6 @@ fecha: "11-22-2023",
 activate: true,
 admin: false,
 alias: "pietro"
-},
-
-A5m364484h8: {
-fecha: "09-28-2023",
-activate: true,
-admin: false,
-alias: "Pasadena2"
 },
 
 A7o4855k64k: {
