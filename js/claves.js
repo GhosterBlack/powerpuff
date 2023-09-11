@@ -1,7 +1,7 @@
 let Dia = 2;
 let version = 1.7;
 let dataPack = "https://www.mediafire.com/file/jdo5bchqpj6bskf/flex1.7.apk/file";
-important = false;
+important = true;
 
 const claves = {
     nombre: {
