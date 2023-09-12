@@ -36,12 +36,12 @@ alias: "nelm"
 
     },
 
-    A5m3644h4kq: {
+  /*  A5m3644h4kq: {
     fecha: "09-22-2023",
     activate: true,
     admin: false,
         alias: "dante"
-    },
+    }, */
 
     A7o4866468g: {
     fecha: "09-17-2023",
