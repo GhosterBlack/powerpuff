@@ -36,13 +36,6 @@ alias: "nelm"
 
     },
 
-    A3m24332348: {
-    fecha: "09-22-2023",
-    activate: false,
-    admin: false,
-        alias: "querida"
-    },
-
     A5m3644h4kq: {
     fecha: "09-22-2023",
     activate: true,
@@ -72,24 +65,24 @@ alias: "carmen"
 },
 
 A3m2422o32o: {
-fecha: "11-22-2023",
+fecha: "09-22-2023",
 activate: true,
 admin: false,
 alias: "pietro"
 },
 
 A7o4855k64k: {
-fecha: "11-22-2023",
+fecha: "10-22-2023",
 activate: true,
 admin: false,
-alias: "oreo3"
+alias: "daniela"
 },
 
 Aa05a7747j4: {
-fecha: "11-22-2023",
+fecha: "09-22-2023",
 activate: false,
 admin: false,
-alias: "oreo4"
+alias: "pasadena2"
 },
 
 Ac66c88g96g: {
