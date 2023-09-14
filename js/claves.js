@@ -80,14 +80,14 @@ alias: "daniela"
 
 Aa05a7747j4: {
 fecha: "09-22-2023",
-activate: false,
-admin: false,
+activate: true,
+admin: true,
 alias: "pasadena2"
 },
 
 Ac66c88g96g: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "oreo5"
 },
