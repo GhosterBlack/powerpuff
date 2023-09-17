@@ -16,11 +16,7 @@ const claves = {
         admin: false,
         nombre: "Ivan Torres"
     },
-    ivan: {
-        fecha: '09-22-2023',
-        activate: false,
-        admin: true
-    },
+    
     franker: {
         fecha: "09-22-2023",
         activate: true,
@@ -76,13 +72,6 @@ fecha: "10-22-2023",
 activate: true,
 admin: false,
 alias: "daniela"
-},
-
-Aa05a7747j4: {
-fecha: "09-22-2023",
-activate: true,
-admin: true,
-alias: "pasadena2"
 },
 
 Ac66c88g96g: {
