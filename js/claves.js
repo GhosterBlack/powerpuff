@@ -100,7 +100,7 @@ alias: "oreo6"
 },
 
 Ago8gbbcc8c: {
-fecha: "11-22-2023",
+fecha: "10-22-2023",
 activate: false,
 admin: false,
 alias: "oreo7"
