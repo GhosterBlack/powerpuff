@@ -83,30 +83,30 @@ alias: "oreo5"
 
 Aee7eaa0al0: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
-alias: "oreo6"
+alias: "tio"
 },
 
 Ago8gbbcc8c: {
 fecha: "10-22-2023",
 activate: false,
 admin: false,
-alias: "oreo7"
+alias: "nueva"
 },
 
 Aj89iccodno: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
-alias: "oreo8"
+alias: "jorge pasadena"
 },
 
 Almakee8fa8: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
-alias: "oreo9"
+alias: "pedro"
 },
 
 }
