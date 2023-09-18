@@ -39,19 +39,6 @@ alias: "nelm"
         alias: "dante"
     }, */
 
-    A7o4866468g: {
-    fecha: "09-17-2023",
-    activate: false,
-    admin: false,
-        alias: "primo"
-    },
-
-    Aa05a87j7o6: {
-    fecha: "09-22-2023",
-    activate: false,
-    admin: false,
-        alias: "ident"
-    },
     
     A261211c1fc: {
 fecha: "10-22-2023",
