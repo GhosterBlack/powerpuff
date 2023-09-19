@@ -108,7 +108,7 @@ A2o2423m3a38m: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "nuevo1"
+alias: "pietro"
 },
 
 A483645m514q5: {
