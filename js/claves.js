@@ -96,5 +96,78 @@ admin: false,
 alias: "pedro"
 },
 
+    
+A1c121261j1ib: {
+fecha: "11-22-2023",
+activate: false,
+admin: true,
+alias: "Ivan"
+},
+
+A2o2423m3a38m: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo1"
+},
+
+A483645m514q5: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo2"
+},
+
+A5k4857o6k6gg: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo3"
+},
+
+A745a6a08b86r: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo4"
+},
+
+A8g6c8c6a29oa: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo5"
+},
+
+Aa07e9eeblbel: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo6"
+},
+
+Abc8gbgodcd44: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo7"
+},
+
+Aco9icj8f3emf: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo8"
+},
+
+Ae8akdlmgmgcq: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "nuevo9"
+},
+
+
+    
 }
 
