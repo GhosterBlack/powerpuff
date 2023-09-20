@@ -161,7 +161,7 @@ alias: "Jorge Pasadena"
 },
 
 A704866468g: {
-    fecha: "11-22-2023",
+    fecha: "1⁰-22-2023",
     activate: true,
     admin: false,
     alias: "MIGUEL FERRO"
