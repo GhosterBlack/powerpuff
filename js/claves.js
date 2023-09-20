@@ -82,13 +82,6 @@ admin: false,
 alias: "nueva"
 },
 
-Aj89iccodno: {
-fecha: "11-22-2023",
-activate: true,
-admin: false,
-alias: "jorge pasadena"
-},
-
 Almakee8fa8: {
 fecha: "11-22-2023",
 activate: true,
@@ -164,7 +157,7 @@ Ae8akdlmgmgcq: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
-alias: "nuevo9"
+alias: "Jorge Pasadena"
 },
 
 
