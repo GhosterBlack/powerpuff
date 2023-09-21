@@ -56,7 +56,7 @@ alias: "pietro"
 
 A7o4855k64k: {
 fecha: "10-22-2023",
-activate: true,
+activate: false,
 admin: false,
 alias: "daniela"
 },
@@ -92,7 +92,7 @@ alias: "pedro"
     
 A1c121261j1ib: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: true,
 alias: "Ivan"
 },
