@@ -54,13 +54,6 @@ admin: false,
 alias: "pietro"
 },
 
-A7o4855k64k: {
-fecha: "10-22-2023",
-activate: false,
-admin: false,
-alias: "daniela"
-},
-
 Ac66c88g96g: {
 fecha: "11-22-2023",
 activate: true,
