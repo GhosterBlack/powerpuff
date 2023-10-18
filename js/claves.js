@@ -19,7 +19,7 @@ const claves = {
     
     franker: {
         fecha: "09-22-2023",
-        activate: true,
+        activate: false,
         admin: true,
     },
 
@@ -106,7 +106,7 @@ alias: "nuevo2"
 
 A5k4857o6k6gg: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nuevo3"
 },
