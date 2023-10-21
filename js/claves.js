@@ -92,7 +92,7 @@ alias: "Ivan"
 
 A2o2423m3a38m: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "pietro"
 },
@@ -113,7 +113,7 @@ alias: "nuevo3"
 
 A745a6a08b86r: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nuevo4"
 },
