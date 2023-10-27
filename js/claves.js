@@ -118,12 +118,12 @@ admin: false,
 alias: "nuevo4"
 },
 
-A8g6c8c6a29oa: {
+/* A8g6c8c6a29oa: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
 alias: "nuevo5"
-},
+}, */
 
 Aa07e9eeblbel: {
 fecha: "11-22-2023",
