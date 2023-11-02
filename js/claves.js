@@ -159,6 +159,75 @@ alias: "Jorge Pasadena"
     admin: false,
     alias: "MIGUEL FERRO"
 } */
+A26161c1121l1fd: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie0"
+},
+
+A3m2c2o2243e32q: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie1"
+},
+
+A5m3i48436574hb: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie2"
+},
+
+A7o4o5k5487064o: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie3"
+},
+
+Aa0627475a8l7j9: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie4"
+},
+
+Ac6788g86cae96m: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie5"
+},
+
+Aee8ea0a7ec7al7: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie6"
+},
+
+Ago9kbcb8ge0c8k: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie7"
+},
+
+Aj8aqcod9ifldn5: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie8"
+},
+
+Almc4e8eakhefai: {
+fecha: "11-22-2023",
+activate: false,
+admin: false,
+alias: "proxie9"
+},
 
 }
 
