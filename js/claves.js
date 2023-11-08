@@ -75,12 +75,12 @@ admin: false,
 alias: "nueva"
 },
 
-Almakee8fa8: {
+/*Almakee8fa8: {
 fecha: "11-22-2023",
 activate: true,
 admin: false,
 alias: "pedro"
-},
+},*/
 
     
 A1c121261j1ib: {
@@ -146,12 +146,12 @@ admin: false,
 alias: "nuevo8"
 },
 
-Ae8akdlmgmgcq: {
+/*Ae8akdlmgmgcq: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
 alias: "Jorge Pasadena"
-},
+}, */
 
 /* A704866468g: {
     fecha: "1⁰-22-2023",
