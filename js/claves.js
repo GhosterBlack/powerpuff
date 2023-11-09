@@ -24,7 +24,7 @@ const claves = {
     },
 
     
-   A261211f1gi: {
+   inactive_A261211f1gi: {
     fecha: "09-22-2023",
     activate: true,
     admin: false,
@@ -40,21 +40,21 @@ alias: "nelm"
     }, */
 
     
-    A261211c1fc: {
+    inactive_A261211c1fc: {
 fecha: "10-22-2023",
 activate: true,
 admin: false,
 alias: "carmen"
 },
 
-A3m2422o32o: {
+inactive_A3m2422o32o: {
 fecha: "09-22-2023",
 activate: true,
 admin: false,
 alias: "pietro"
 },
 
-Ac66c88g96g: {
+inactive_Ac66c88g96g: {
 fecha: "11-22-2023",
 activate: true,
 admin: false,
@@ -90,28 +90,28 @@ admin: true,
 alias: "Ivan"
 },
 
-A2o2423m3a38m: {
+inactive_A2o2423m3a38m: {
 fecha: "11-22-2023",
 activate: true,
 admin: false,
 alias: "pietro"
 },
 
-A483645m514q5: {
+inactive_A483645m514q5: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
 alias: "nuevo2"
 },
 
-A5k4857o6k6gg: {
+inactive_A5k4857o6k6gg: {
 fecha: "11-22-2023",
 activate: true,
 admin: false,
 alias: "nuevo3"
 },
 
-A745a6a08b86r: {
+inactive_A745a6a08b86r: {
 fecha: "11-22-2023",
 activate: true,
 admin: false,
@@ -125,21 +125,21 @@ admin: false,
 alias: "nuevo5"
 }, */
 
-Aa07e9eeblbel: {
+inactive_Aa07e9eeblbel: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
 alias: "nuevo6"
 },
 
-Abc8gbgodcd44: {
+inactive_Abc8gbgodcd44: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
 alias: "nuevo7"
 },
 
-Aco9icj8f3emf: {
+inactive_Aco9icj8f3emf: {
 fecha: "11-22-2023",
 activate: false,
 admin: false,
