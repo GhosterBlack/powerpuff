@@ -104,7 +104,7 @@ admin: false,
 alias: "nuevo2"
 },
 
-inactive_A5k4857o6k6gg: {
+A5k4857o6k6gg: {
 fecha: "11-22-2023",
 activate: true,
 admin: false,
