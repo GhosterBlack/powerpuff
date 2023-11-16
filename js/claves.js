@@ -146,12 +146,12 @@ admin: false,
 alias: "nuevo8"
 },
 
-/*Ae8akdlmgmgcq: {
+Ae8akdlmgmgcq: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "Jorge Pasadena"
-}, */
+},
 
 /* A704866468g: {
     fecha: "1⁰-22-2023",
