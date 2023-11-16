@@ -1,5 +1,5 @@
 let Dia = 2;
-let version = 1.7;
+let version = 1.8;
 let dataPack = "https://www.mediafire.com/file/jdo5bchqpj6bskf/flex1.7.apk/file";
 important = true;
 
