@@ -41,7 +41,7 @@ alias: "nelm"
 
     
     A261211c1fc: {
-fecha: "10-22-2023",
+fecha: "12-22-2023",
 activate: true,
 admin: false,
 alias: "carmen"
@@ -62,15 +62,15 @@ alias: "oreo5"
 },
 
 Aee7eaa0al0: {
-fecha: "11-22-2023",
+fecha: "12-22-2023",
 activate: true,
 admin: false,
 alias: "tio"
 },
 
-Ago8gbbcc8c: {
+inactive_Ago8gbbcc8c: {
 fecha: "10-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nueva"
 },
@@ -99,7 +99,7 @@ alias: "pietro"
 
 inactive_A483645m514q5: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nuevo2"
 },
@@ -127,27 +127,27 @@ alias: "nuevo5"
 
 inactive_Aa07e9eeblbel: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nuevo6"
 },
 
 inactive_Abc8gbgodcd44: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nuevo7"
 },
 
 inactive_Aco9icj8f3emf: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "nuevo8"
 },
 
 Ae8akdlmgmgcq: {
-fecha: "11-22-2023",
+fecha: "12-22-2023",
 activate: true,
 admin: false,
 alias: "Jorge Pasadena"
@@ -159,32 +159,32 @@ alias: "Jorge Pasadena"
     admin: false,
     alias: "MIGUEL FERRO"
 } */
-A26161c1121l1fd: {
+inactive_A26161c1121l1fd: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "proxie0"
 },
 
-A3m2c2o2243e32q: {
+inactive_A3m2c2o2243e32q: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "proxie1"
 },
 
-A5m3i48436574hb: {
+inactive_A5m3i48436574hb: {
 fecha: "11-22-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "proxie2"
 },
 
 A7o4o5k5487064o: {
-fecha: "11-22-2023",
+fecha: "11-26-2023",
 activate: false,
 admin: false,
-alias: "proxie3"
+alias: "fabiola"
 },
 
 Aa0627475a8l7j9: {
