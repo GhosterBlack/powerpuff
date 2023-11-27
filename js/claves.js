@@ -157,7 +157,7 @@ A704866468g: {
     activate: false,
     admin: false,
     alias: "MIGUEL FERRO"
-}
+},
 inactive_A26161c1121l1fd: {
 fecha: "11-22-2023",
 activate: true,
