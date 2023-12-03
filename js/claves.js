@@ -179,9 +179,9 @@ admin: false,
 alias: "proxie2"
 },
 
-A7o4o5k5487064o: {
+inactive_A7o4o5k5487064o: {
 fecha: "11-26-2023",
-activate: false,
+activate: true,
 admin: false,
 alias: "fabiola"
 },
